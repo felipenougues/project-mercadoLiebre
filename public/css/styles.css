@@ -1,0 +1,456 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    min-width: fit-content;
+    margin: 0;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #060A24;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+
+/** Header **/
+
+header .barra {
+    background-color: #EAC926;
+}
+
+header .buscador {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+header .icono {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header .icono p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+header .logo {
+    height: 80;
+    min-width: 100px;
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 34px;
+    cursor: pointer;
+}
+
+header .buscar {
+    border-radius: 10px;
+}
+
+header .fa-search {
+    border: 1px solid #060A24;
+    padding: 1px;
+    background-color: #ebebeb;
+    position: relative;
+    max-width: 28px;
+}
+
+header .logo-busqueda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 10px;
+    align-items: center;
+}
+
+header .navegacion {
+    display: none;
+}
+
+header .burger-menu {
+    text-align: center;
+}
+
+header .fa-bars {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #1259c3;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 15%;
+}
+
+
+/** Main **/
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos_texto {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+main h3 {
+    display: none;
+}
+
+main {
+    background-color: #ebebeb;
+}
+
+main .bloque-main {
+    width: 90%;
+    align-items: center;
+}
+
+main .imagen-banner img {
+    width: 100vw;
+}
+
+main .articulos {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    background-color: white;
+}
+
+main .articulos:hover {
+    box-shadow: 18px 4px 16px 5px rgba(0, 0, 0, 0.75);
+}
+
+main .imagenes-articulos {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main .imagenes-articulos img {
+    align-items: center;
+    width: 100%;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -300px;
+    top: -35px;
+}
+
+main .fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+}
+
+main .fa-truck:hover {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    transform: rotate(270deg);
+    transition: all 2s;
+}
+
+main .descripciones-articulos {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main .precio-descuento {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/** Media Queris **/
+
+@media (min-width: 481px) {
+    header .navegacion {
+        display: block;
+    }
+    header .navegacion li a {
+        color: #060a24;
+        text-decoration: none;
+        align-items: center;
+    }
+    header .navegacion ul {
+        list-style: none;
+        padding: 0;
+    }
+    header .logo {
+        min-width: 180px;
+    }
+    header .burger-menu {
+        display: none;
+    }
+    main h2 {
+        text-align: left;
+        margin-left: 3rem;
+    }
+    main h3 {
+        display: block;
+    }
+    main .articulos-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main section article i {
+        display: block;
+        font-size: 16px;
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        right: -100px;
+        top: -35px;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 768px) {
+    header .logo-busqueda-icono {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .icono p {
+        font-size: 10px;
+        margin-top: 25px;
+        position: relative;
+        left: -50px;
+    }
+    header .buscar {
+        font-size: 18px;
+    }
+    header .buscador {
+        margin-right: 3px;
+        margin-top: 20px;
+        margin-left: 3vw;
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+    }
+    header .enlaces {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 10px;
+    }
+    header .acciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    header .navegacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10rem;
+    }
+    header nav li a {
+        font-size: 10px;
+    }
+    header nav li i {
+        font-size: 15px;
+    }
+    main .articulos-contenedor {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    main h2 {
+        text-align: left;
+        margin-left: 3rem;
+    }
+    main h3 {
+        font-size: 10px;
+    }
+    main section article i {
+        display: block;
+        font-size: 16px;
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        right: -60px;
+        top: -35px;
+        box-sizing: border-box;
+    }
+    footer .iconos .contenido {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 2em;
+    }
+    footer .contenido p {
+        width: 25vw;
+    }
+    footer .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer .contenido-ultimo h3 {
+        text-align: left;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+}
+
+
+/** Login **/
+
+main .inputs-formulario {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main .boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    flex: 0 0 100%;
+    background-color: #1259c3;
+}
+
+main .boton:hover {
+    cursor: pointer;
+}
+
+main .boton:hover {
+    background-image: linear-gradient(225deg, #0022aa 0%, #00f0b8 100%);
+}
+
+
+/** Register **/
+
+main .mayusculas {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+main .formulario-compra-vende {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+main .formulario-register {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 2rem;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial;
+}
+
+
+/** footer **/
+
+footer .margen-footer {
+    margin-top: 5rem;
+}
+
+footer .margen-footer i {
+    color: #1259c3;
+}
+
+footer .margen-footer .fas:hover {
+    color: #39b54a;
+}
+
+footer .contenedor {
+    align-items: center;
+    margin-left: 0;
+}
+
+footer .iconos i {
+    margin-left: 50%;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+footer .contenido {
+    text-align: center;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: 30vw;
+    width: 50%;
+    height: 10rem;
+}
+
+footer .contenido-ultimo {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
