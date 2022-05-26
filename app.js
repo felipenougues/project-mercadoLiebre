@@ -2,7 +2,7 @@ const path = require("path");
 
 const express = require("express");
 const app = express();
-
+app.use(express.static("public"));
 const PORT = process.env.PORT || 3000;
 
 const archHome = path.join(__dirname, "/views/home.html")
@@ -22,7 +22,7 @@ app.get("/register", function(req, res) {
 
 
 
-app.use(express.static("public"));
+
 
 app.listen(PORT, () => {
     console.log("Servidor Corriendo")
