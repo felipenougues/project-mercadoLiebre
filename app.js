@@ -1,9 +1,9 @@
-const path = require("path");
+const path = require('path');
 
-const express = require("express");
+const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 
 const archHome = path.join(__dirname, "/views/home.html")
 
