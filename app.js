@@ -19,7 +19,7 @@ app.get("/login", function(req, res) {
 app.get("/register", function(req, res) {
     res.sendFile(path.join(__dirname + "/views/register.html"))
 })
-app.use(express.static("/public/css/styles.css"));
+app.use(express.static("public"));
 
 app.listen(PORT, () => {
     console.log("Servidor Corriendo")
