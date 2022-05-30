@@ -13,11 +13,11 @@ app.get('/', function(req, res) {
     res.sendFile(archHome)
 })
 
-app.get("/", function(req, res) {
+app.get('/views/login', function(req, res) {
     res.sendFile(path.join(__dirname, "/views/login.html"))
 })
 
-app.get("/", function(req, res) {
+app.get('/views/register', function(req, res) {
     res.sendFile(path.join(__dirname, "/views/register.html"))
 })
 
