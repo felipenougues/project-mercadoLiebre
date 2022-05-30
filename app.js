@@ -17,7 +17,7 @@ app.get("/views/login", function(req, res) {
 })
 
 app.get("/views/register", function(req, res) {
-    res.sendFile(path.join(__dirname, "/views/register.html"))
+    res.sendFile(path.join(__dirname, "http://127.0.0.1:5500/views/register.html"))
 })
 app.use(express.static("public"));
 
