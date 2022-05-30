@@ -7,17 +7,17 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 const PORT = process.env.PORT || 3030;
 
 const archHome = path.join(__dirname, '/views/home.html')
-const archRegister = path.join(__dirname, '/views/register.html')
-const archLogin = path.join(__dirname, '/views/login.html')
+const archRegister = path.join(__dirname, '/register.html')
+const archLogin = path.join(__dirname, '/login.html')
 
 
 app.get('/', function(req, res) {
     res.sendFile(archHome)
 })
-app.get('/', function(req, res) {
+app.get('/register', function(req, res) {
     res.sendFile(archRegister)
 })
-app.get('/', function(req, res) {
+app.get('/login', function(req, res) {
     res.sendFile(archLogin)
 })
 
